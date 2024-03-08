@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +16,8 @@ public class Main {
                 // Success
                 temperatureC = in.nextDouble();
                 done = true;
+                temperatureF = (temperatureC * 9/5) + 32;
+                System.out.println("Your temperature in fahrenheit is " + temperatureF);
 
             } else {
                 // Fail
@@ -27,9 +28,9 @@ public class Main {
 
         } while (done = false);
 
-        temperatureF = (temperatureC * 9/5) + 35;
 
-        System.out.println("Your temperature in fahrenheit is " + temperatureF);
+
+
 
     }
 }
